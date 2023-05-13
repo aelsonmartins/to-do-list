@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+
+    /*Produto*/
+    --purple: #8284FA;
+    --purple-dark: #5E60CE;
+    --blue: #4EA8DE;
+    --blue-dark: #1E6F9F;
+
+     /*Base*/
+     --gray700: #0D0D0D;
+     --gray600: #1A1A1A;
+     --gray500: #262626;
+     --gray400: #333333;
+
+     --gray300: #808080;
+     --gray200: #D9D9D9;
+     --gray100: #F2F2F2;
+     --danger: #E25858;
+
+     --done: #4BB543;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    background-color: var(--gray600);
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: var(--gray700);
+}
+
+.new_task{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 2em;
+    gap: .5em;
+}
+
+.btn_create{
+    padding: 1em 1em;
+    background-color: var(--blue-dark);
+    color: var(--gray100);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input_new_task{
+    background-color: var(--gray500);
+    border: 1px solid var(--gray700);
+    color: var(--gray100);
+    border-radius: 8px;
+    width: 50vw;
+    padding: 1em 1em;
+    font-size: 16px;
+}
+
+.input_new_task::placeholder{
+    color: var(--gray300);
+}
+
+.input_new_task:focus{
+    outline: 0;
+    border-color: var(--purple-dark);
+}
+
+
+
